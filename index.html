@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIMAN Premium Skincare Rituals</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <img src="./asset/LOGO.avif" alt="Le-Bambini Logo" class="brand-logo">
+            <h1>Discover Radiant Skin</h1>
+            <p>Experience transformative K-beauty skincare rituals delivered straight to your door.</p>
+        </div>
+    </header>
+
+    <!-- Product Listing -->
+    <main class="products-container">
+        <h2>Our Exclusive Sets</h2>
+        <div class="products-grid">
+            
+            <!-- Set A Product Card -->
+            <div class="product-card" data-id="setA">
+                <div class="product-image">
+                    <img src="./asset/riman/seta_new1.png" alt="Radiansome 100 Ritual Experience Kit">
+                    <span class="discount-badge">50% OFF</span>
+                </div>
+                <div class="product-info">
+                    <h3>Set A: Radiansome 100 Ritual Experience Kit</h3>
+                    <p class="description">A comprehensive 5-piece travel-sized skincare set using "Microfluidizer" technology for a distinct glass skin finish.</p>
+                    <div class="pricing">
+                        <span class="current-price">$99.00</span>
+                        <span class="old-price">$129.00</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="qty-btn decrement">-</button>
+                        <span class="qty-display">0</span>
+                        <button class="qty-btn increment">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Set B Product Card -->
+            <div class="product-card" data-id="setB">
+                <div class="product-image">
+                    <img src="./asset/riman/setB.jpg" alt="Expert RIMAN Ritual">
+                    <span class="discount-badge">50% OFF</span>
+                </div>
+                <div class="product-info">
+                    <h3>Set B: Expert RIMAN Ritual</h3>
+                    <p class="description">The signature Booster 5-Set. Hydrate, lift, and firm your skin with Giant ByungPool and Jeju Lava Energy Water.</p>
+                    <div class="pricing">
+                        <span class="current-price">$488.00</span>
+                        <span class="old-price">$900.00</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="qty-btn decrement">-</button>
+                        <span class="qty-display">0</span>
+                        <button class="qty-btn increment">+</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- Floating Cart & Checkout Modal -->
+    <div id="cart-summary" class="cart-summary">
+        <div class="cart-header">
+            <h3>Your Order</h3>
+        </div>
+        <div class="cart-details">
+            <p id="total-text">Total: <strong>$0.00</strong></p>
+            <button id="checkout-btn" class="primary-btn">Proceed to PayNow</button>
+        </div>
+    </div>
+
+    <!-- Checkout Overlay -->
+    <div id="checkout-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Complete Your Order</h2>
+            
+            <div class="order-total-highlight">
+                <p>Transfer Amount</p>
+                <h3 id="modal-total">$0.00</h3>
+            </div>
+            
+            <div class="payment-instructions">
+                <h4>Step 1: PayNow</h4>
+                <p>Scan the QR code below or PayNow to <strong>9424 8492 (Le-Bambini)</strong></p>
+                <div class="qr-placeholder">
+                    <div class="qr-box">
+                        <img src="./asset/paynow-9424 8492 (Le-Bambini).jpg" alt="PayNow QR Code">
+                        <p>PayNow to Le-Bambini</p>
+                    </div>
+                </div>
+                <p class="small-instruction">Take a screenshot of your successful transfer.</p>
+            </div>
+
+            <div class="form-instructions">
+                <h4>Step 2: Submit Order Form</h4>
+                <p>Have your screenshot ready? Click below to submit your delivery details and upload your payment proof to complete the order.</p>
+                
+                <a href="https://docs.google.com/forms/" target="_blank" id="google-form-btn" class="primary-btn form-submit">
+                    Go to Order Form
+                </a>
+                <p class="small-instruction">We will process your order within 24 hours.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Details Modal Overlay -->
+    <div id="product-modal" class="modal-overlay hidden">
+        <div class="modal-content product-content-box">
+            <span class="close-modal product-close">&times;</span>
+            <div id="product-modal-body">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
