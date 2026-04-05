@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Product definitions mapping to their IDs
     const products = {
         'setA': { price: 99.00, qty: 0, name: 'Radiansome 100 Ritual Kit' },
-        'setB': { price: 488.00, qty: 0, name: 'Expert RIMAN Ritual' }
+        'setB': { price: 488.00, qty: 0, name: 'RIMAN ICD Skincare Basic Set with gift' }
     };
 
     // Product Data for Modals
@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 './asset/riman/seta_new1.png',
                 './asset/riman/seta_new2.png',
                 './asset/riman/SetA.jpg',
-                './asset/riman/setA.webp'
+                './asset/riman/SetA_1.jpg',
+                './asset/riman/SetA_2.jpg'
             ],
             youtubeId: 'X8tspAXYESI',
             markdownHTML: `
@@ -40,12 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
             `
         },
         'setB': {
-            title: 'Set B: Expert RIMAN Ritual (8 Items)',
+            title: 'RIMAN ICD Skincare Basic Set with gift',
             images: [
                 './asset/riman/setB.jpg',
-                './asset/riman/setB_2.jpg',
-                './asset/riman/setB_3.jpg',
-                './asset/riman/setB_4.jpg'
+                './asset/riman/SetB.webp',
+                './asset/riman/SetB_5.jpg'
             ],
             youtubeId: 'AvPYocYsxYg',
             markdownHTML: `
