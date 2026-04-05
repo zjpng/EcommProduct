@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `
         },
         'setB': {
-            title: 'Set B: Expert RIMAN Ritual',
+            title: 'Set B: Expert RIMAN Ritual (8 Items)',
             images: [
                 './asset/riman/setB.jpg',
                 './asset/riman/setB_2.jpg',
@@ -50,21 +50,27 @@ document.addEventListener('DOMContentLoaded', () => {
             youtubeId: 'AvPYocYsxYg',
             markdownHTML: `
                 <div class="markdown-body">
-                    <p>The Expert RIMAN Ritual (featuring the core INCELLDERM Dermatology Booster 5-Set) is a premium, innovative collection crafted to simultaneously hydrate, lift, and firm the skin while aggressively combating visible signs of aging.</p>
-                    
-                    <h3>Core Ingredients & Technology</h3>
+                    <p>The Expert RIMAN Ritual is the complete INCELLDERM 8-piece collection, crafted to hydrate, lift, firm, and protect while aggressively combating visible signs of aging. Formulated with Jeju Lava Energy Water, Giant ByungPool Centella Asiatica, and 24K gold.</p>
+
+                    <h3>All 8 Items in the Set</h3>
                     <ul>
-                        <li><strong>Giant ByungPool (Centella Asiatica):</strong> Sourced from Jeju Island, delivering exceptional moisturizing, soothing, and antioxidant effects.</li>
-                        <li><strong>Jeju Lava Energy Water:</strong> Water filtered through volcanic bedrock, rich in rare natural minerals.</li>
-                        <li><strong>Advanced Anti-Aging:</strong> Penetrates deeply to stimulate collagen production and visibly plump the complexion.</li>
+                        <li><strong>ICD Dermatology Cream:</strong> A density-lifting cream that supports firm, resilient skin. Infused with deep hydration for moisture elasticity and a radiant, healthy glow.</li>
+                        <li><strong>ICD Dermatology First Package:</strong> The core 2-step duo — a hydrating Booster serum that layers dewy hydration, and a glow Serum that restores moisture balance and firms skin.</li>
+                        <li><strong>ICD Calming Balance Gel:</strong> A soothing gel with Damask rose flower water that revitalizes dry skin. Formulated with 99.99% pure 24K gold to maintain balanced hydration.</li>
+                        <li><strong>ICD Two-Phase Oil Mist:</strong> A rich mist combining moisturizing oils and vitamins. The perfect oil-water blend instantly hydrates while boosting natural radiance.</li>
+                        <li><strong>ICD Cleansing Powder Wash:</strong> A plant-derived powder cleanser with papain enzyme that gently exfoliates dead skin cells, leaving clear, refined skin.</li>
+                        <li><strong>ICD Moisture Cleansing Oil:</strong> A gentle oil cleanser with 76% plant-derived oils that melts away makeup and impurities without irritation.</li>
+                        <li><strong>ICD Multi Stick Balm:</strong> A multi-use hydrating stick with camellia seed oil that minimizes fine lines and delivers a luxurious, dewy glow.</li>
+                        <li><strong>ICD Daily Aqua BB Cream:</strong> A skincare-infused BB cream with buildable, dewy coverage that evens skin tone without caking — the K-beauty "glass skin" finish.</li>
                     </ul>
 
-                    <h3>Core Items & Benefits</h3>
+                    <h3>Core Ingredients & Technology</h3>
                     <ul>
-                        <li><strong>Dermatology Booster & Balance Gel:</strong> Refreshes and completely calms redness or irritation.</li>
-                        <li><strong>Dermatology Serum (Ampoule):</strong> Highly concentrated treatment targeting fine lines and wrinkles.</li>
-                        <li><strong>Active Cream EX:</strong> A rich, luxurious cream that eliminates parched skin and firms deeply.</li>
-                        <li><strong>Extra Hydrating Oil-Mist:</strong> An ultra-light sensory mist for perfect moisture balance on the go.</li>
+                        <li><strong>Jeju Lava Energy Water:</strong> Water filtered through volcanic bedrock, rich in rare natural minerals.</li>
+                        <li><strong>Giant ByungPool (Centella Asiatica):</strong> Sourced from Jeju Island for exceptional moisturizing and antioxidant effects.</li>
+                        <li><strong>24K Gold (in Balance Gel):</strong> Revitalizes and brightens damaged skin.</li>
+                        <li><strong>Papain Enzyme:</strong> Plant-derived gentle exfoliation for clear skin tone.</li>
+                        <li><strong>Camellia Seed Oil:</strong> Deep nourishment and luxury hydration.</li>
                     </ul>
                 </div>
             `
@@ -84,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const googleFormBtn = document.getElementById('google-form-btn'); 
 
     // Base URL of the google form
-    const baseFormUrl = 'https://docs.google.com/forms/';
+    const baseFormUrl = 'https://forms.gle/YUM5S5cd6CSrTLUE8';
 
     function updateCart() {
         let total = 0;
@@ -115,8 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cartSummary.classList.remove('visible');
         }
 
-        const orderSummaryString = encodeURIComponent(`Order Total: ${formattedTotal}\nItems:\n` + summaryParams.join('\n'));
-        googleFormBtn.href = `${baseFormUrl}?usp=pp_url&entry.100000=${orderSummaryString}`;
+        googleFormBtn.href = baseFormUrl;
     }
 
     // Attach Event Listeners to Product Cards (For Details Modal AND Cart Quantities)
@@ -222,6 +227,38 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (!document.querySelector('.modal-overlay.active')) {
                     document.body.style.overflow = '';
                 }
+            }
+        });
+    });
+
+    // --- Mobile Navigation Toggle ---
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    if (navToggle && navLinks) {
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    }
+
+    // --- FAQ Accordion ---
+    document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+            const item = question.parentElement;
+            const isOpen = item.classList.contains('open');
+
+            document.querySelectorAll('.faq-item.open').forEach(openItem => {
+                openItem.classList.remove('open');
+            });
+
+            if (!isOpen) {
+                item.classList.add('open');
             }
         });
     });

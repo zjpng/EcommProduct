@@ -3,31 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RIMAN Premium Skincare Rituals</title>
+    <title>Le-Bambini | RIMAN K-Beauty Skincare Rituals</title>
+    <meta name="description" content="Discover radiant skin with Le-Bambini's curated RIMAN K-Beauty skincare ritual kits. 100% natural, Jeju Island sourced, delivered in Singapore. From $99.">
+    <meta name="keywords" content="RIMAN skincare, K-beauty Singapore, glass skin, Korean skincare set, Jeju Island skincare, Radiansome, INCELLDERM">
+    <meta name="author" content="Le-Bambini">
+    <link rel="canonical" href="https://lebambini.sg">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Le-Bambini | RIMAN K-Beauty Skincare Rituals">
+    <meta property="og:description" content="100% natural K-beauty skincare kits. Jeju Island sourced. From $99. Delivered in Singapore.">
+    <meta property="og:image" content="./asset/hero-glass-skin.webp">
+    <meta property="og:url" content="https://lebambini.sg">
+    <meta property="og:site_name" content="Le-Bambini">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Le-Bambini | RIMAN K-Beauty Skincare Rituals">
+    <meta name="twitter:description" content="100% natural K-beauty skincare kits from Jeju Island.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./asset/LOGO.avif" type="image/avif">
+
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Navigation -->
+    <nav class="site-nav">
+        <a href="#" class="nav-brand">
+            <img src="./asset/LOGO.avif" alt="Le-Bambini" class="nav-logo">
+        </a>
+        <div class="nav-links" id="navLinks">
+            <a href="#rituals">Our Rituals</a>
+            <a href="#comparison">Which Kit</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#brand-story">Our Story</a>
+            <a href="#faq">FAQ</a>
+        </div>
+        <button class="nav-hamburger" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
 
     <!-- Hero Section -->
     <header class="hero">
         <div class="hero-content">
             <img src="./asset/LOGO.avif" alt="Le-Bambini Logo" class="brand-logo">
-            <h1>Discover Radiant Skin</h1>
-            <p>Experience transformative K-beauty skincare rituals delivered straight to your door.</p>
+            <h1>Your Korean Glass Skin<br>Starts Here</h1>
+            <p>Handpicked RIMAN K-beauty ritual kits. 100% natural, Jeju Island sourced.<br>Beautiful skin, delivered to your door in Singapore.</p>
+            <a href="#rituals" class="hero-cta">Choose Your Ritual</a>
         </div>
     </header>
 
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="trust-items">
+            <div class="trust-item">
+                <span class="trust-icon">&#9752;</span>
+                <span>100% Natural</span>
+            </div>
+            <div class="trust-item">
+                <span class="trust-icon">&#10084;</span>
+                <span>Cruelty-Free</span>
+            </div>
+            <div class="trust-item">
+                <span class="trust-icon">&#9730;</span>
+                <span>Jeju Island Sourced</span>
+            </div>
+            <div class="trust-item">
+                <span class="trust-icon">&#9992;</span>
+                <span>SG Delivery</span>
+            </div>
+            <div class="trust-item">
+                <span class="trust-icon">&#9733;</span>
+                <span>Authorised RIMAN Reseller</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why RIMAN -->
+    <section class="why-section">
+        <h2>Why RIMAN Works Differently</h2>
+        <div class="why-grid">
+            <div class="why-card">
+                <div class="why-icon">&#9881;</div>
+                <h3>Microfluidizer Technology</h3>
+                <p>Active ingredients broken into nano-particles that absorb deep into the skin -- not just sitting on the surface.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">&#9730;</div>
+                <h3>Jeju Island Ingredients</h3>
+                <p>Every ingredient is sustainably sourced from the pristine volcanic landscape of Jeju Island, South Korea.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">&#10024;</div>
+                <h3>Visible Results</h3>
+                <p>Users report brighter, firmer, and more hydrated skin within the first 2 weeks of the ritual.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Product Listing -->
-    <main class="products-container">
-        <h2>Our Exclusive Sets</h2>
+    <main class="products-container" id="rituals">
+        <h2>Choose Your Ritual</h2>
         <div class="products-grid">
-            
+
             <!-- Set A Product Card -->
             <div class="product-card" data-id="setA">
                 <div class="product-image">
                     <img src="./asset/riman/seta_new1.png" alt="Radiansome 100 Ritual Experience Kit">
-                    <span class="discount-badge">50% OFF</span>
+                    <span class="discount-badge">SAVE 23%</span>
                 </div>
                 <div class="product-info">
                     <h3>Set A: Radiansome 100 Ritual Experience Kit</h3>
@@ -36,6 +123,7 @@
                         <span class="current-price">$99.00</span>
                         <span class="old-price">$129.00</span>
                     </div>
+                    <p class="savings-text">Save $30</p>
                     <div class="quantity-control">
                         <button class="qty-btn decrement">-</button>
                         <span class="qty-display">0</span>
@@ -48,15 +136,16 @@
             <div class="product-card" data-id="setB">
                 <div class="product-image">
                     <img src="./asset/riman/setB.jpg" alt="Expert RIMAN Ritual">
-                    <span class="discount-badge">50% OFF</span>
+                    <span class="discount-badge">SAVE 46%</span>
                 </div>
                 <div class="product-info">
                     <h3>Set B: Expert RIMAN Ritual</h3>
-                    <p class="description">The signature Booster 5-Set. Hydrate, lift, and firm your skin with Giant ByungPool and Jeju Lava Energy Water.</p>
+                    <p class="description">The complete 8-piece Expert Ritual. Hydrate, lift, and firm with INCELLDERM Dermatology actives, Jeju Lava Energy Water, and 24K gold-infused balance gel.</p>
                     <div class="pricing">
                         <span class="current-price">$488.00</span>
                         <span class="old-price">$900.00</span>
                     </div>
+                    <p class="savings-text">Save $412</p>
                     <div class="quantity-control">
                         <button class="qty-btn decrement">-</button>
                         <span class="qty-display">0</span>
@@ -64,9 +153,240 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </main>
+
+    <!-- Which Ritual is Right for You -->
+    <section class="comparison-section" id="comparison">
+        <h2>Which Ritual is Right for You?</h2>
+        <div class="comparison-table">
+            <div class="comparison-col">
+                <h3>Set A: Radiansome 100</h3>
+                <p class="comparison-tagline">Perfect for Beginners &amp; Travel</p>
+                <ul>
+                    <li>5-piece travel-sized kit</li>
+                    <li>Glass skin finish</li>
+                    <li>Great starter ritual</li>
+                    <li>Perfect for gifting</li>
+                    <li>Microfluidizer absorption tech</li>
+                </ul>
+                <span class="comparison-price">$99</span>
+                <a href="#rituals" class="comparison-cta">Get Set A</a>
+            </div>
+            <div class="comparison-col featured">
+                <div class="comparison-popular">Most Popular</div>
+                <h3>Set B: Expert Ritual</h3>
+                <p class="comparison-tagline">Complete 8-Item Anti-Aging Routine</p>
+                <ul>
+                    <li>8-piece full-sized collection</li>
+                    <li>Deep lifting &amp; firming</li>
+                    <li>Advanced anti-aging actives</li>
+                    <li>All skin types + BB cream</li>
+                    <li>Jeju Lava Energy Water &amp; 24K gold</li>
+                </ul>
+                <span class="comparison-price">$488</span>
+                <a href="#rituals" class="comparison-cta">Get Set B</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How the Ritual Works -->
+    <section class="ritual-steps" id="how-it-works">
+        <h2>Your 5-Step Ritual</h2>
+        <p class="ritual-subtitle">Every evening. Five minutes. Transformative results.</p>
+        <div class="visual-ritual">
+            <div class="visual-step">
+                <div class="step-visual">
+                    <img src="./asset/pexels-shiny-diamond-3762465.jpg" alt="Step 1: Cleanse">
+                </div>
+                <span class="step-number">1</span>
+                <h4>Cleanse</h4>
+                <p>Activate powder with water, foam, and gently cleanse to remove impurities.</p>
+            </div>
+            <div class="visual-step">
+                <div class="step-visual">
+                    <img src="./asset/pexels-ron-lach-8131567.jpg" alt="Step 2: Tone">
+                </div>
+                <span class="step-number">2</span>
+                <h4>Tone</h4>
+                <p>Pat the essential toner onto skin to strengthen your skin barrier instantly.</p>
+            </div>
+            <div class="visual-step">
+                <div class="step-visual">
+                    <img src="./asset/pexels-content-prod-co-6925477.jpg" alt="Step 3: Treat">
+                </div>
+                <span class="step-number">3</span>
+                <h4>Treat</h4>
+                <p>Apply the concentrated ampoule -- the powerhouse step for glow and elasticity.</p>
+            </div>
+            <div class="visual-step">
+                <div class="step-visual">
+                    <img src="./asset/pexels-shvets-production-9774776.jpg" alt="Step 4: Moisturise">
+                </div>
+                <span class="step-number">4</span>
+                <h4>Moisturise</h4>
+                <p>Lock in everything with the silky cream for a glass skin finish.</p>
+            </div>
+            <div class="visual-step">
+                <div class="step-visual">
+                    <img src="./asset/pexels-monirathnak-30797181.jpg" alt="Step 5: Mist">
+                </div>
+                <span class="step-number">5</span>
+                <h4>Mist</h4>
+                <p>Finish with the dual-phase oil mist for luminous, hydrated skin all day.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients Spotlight -->
+    <section class="ingredients-section">
+        <h2>From Jeju Island to Your Skin</h2>
+        <div class="ingredients-grid">
+            <div class="ingredient-card">
+                <h3>Jeju Lava Energy Water</h3>
+                <p>Filtered through volcanic bedrock, this mineral-rich water delivers profound nourishment that tap water never could.</p>
+            </div>
+            <div class="ingredient-card">
+                <h3>Giant ByungPool</h3>
+                <p>Potent Jeju Centella Asiatica packed with madecassoside -- one of nature's most powerful soothing and antioxidant ingredients.</p>
+            </div>
+            <div class="ingredient-card">
+                <h3>Microfluidizer Tech</h3>
+                <p>Active ingredients engineered into nano-particles that absorb deep into the dermis, not just the surface.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volcanic Sourcing -->
+    <section class="volcanic-section">
+        <div class="volcanic-content">
+            <img src="./asset/pexels-miguel-santos-179259-20258496.jpg" alt="Jeju volcanic stones">
+        </div>
+        <div class="volcanic-text">
+            <p>Every RIMAN Formula starts with Jeju Island's natural minerals. Volcanic bedrock filtered water, Centella Asiatica, and 100% plant-derived ingredients — from the earth to your skin.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"My skin has never looked this good. The Radiansome kit gave me that glass skin finish I've been chasing for years."</p>
+                <span class="testimonial-author">-- Priya, Singapore</span>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"Set B is worth every cent. After 3 weeks, the fine lines around my eyes have visibly reduced. My dermatologist even noticed."</p>
+                <span class="testimonial-author">-- Michelle W., Bukit Timah</span>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"Bought Set A as a gift for my mum. She's obsessed. The packaging is beautiful and the results speak for themselves."</p>
+                <span class="testimonial-author">-- Darren L., Clementi</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Story -->
+    <section class="brand-story" id="brand-story">
+        <div class="brand-story-content">
+            <h2>About Le-Bambini</h2>
+            <p>Le-Bambini was born from a simple belief: that everyone deserves access to transformative skincare. As an authorised reseller of RIMAN in Singapore, we curate the most effective K-beauty rituals and deliver them directly to you.</p>
+            <p>Every product we carry is 100% natural, cruelty-free, and sourced from the pristine volcanic soils of Jeju Island. We've tested every ritual personally, and we only sell what we believe in.</p>
+            <p>That's the Le-Bambini promise.</p>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section" id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">
+                    How long does delivery take in Singapore?
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Orders are processed within 24 hours of payment confirmation. Delivery within Singapore typically takes 2-4 business days.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    How do I pay?
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>We accept PayNow. Simply scan the QR code at checkout and send your payment proof via the Google Form. Your order is processed once payment is confirmed.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Are the products suitable for sensitive skin?
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>RIMAN products are formulated to be gentle across all skin types, including sensitive skin. All ingredients are 100% natural and sustainably sourced. If you have specific allergies, we recommend checking the ingredient list first.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    What is the difference between Set A and Set B?
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Set A (Radiansome 100) is a travel-sized starter kit focused on hydration and a "glass skin" finish -- perfect for beginners or as a gift. Set B (Expert Ritual) is a full-sized, advanced anti-aging set with deep lifting, firming, and wrinkle-reducing properties.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Can I return or exchange the products?
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Due to the nature of skincare products, we do not accept returns on opened items. If you receive a damaged or incorrect item, please contact us immediately and we'll resolve it.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Are these authentic RIMAN products?
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes. Le-Bambini is an authorised reseller of RIMAN products. Every item is genuine, sealed, and sourced directly from authorised distributors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Le-Bambini</h4>
+                <p>Authorised RIMAN Reseller in Singapore</p>
+                <p>Contact: 9424 8492</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="#rituals">Our Rituals</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#brand-story">About Us</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <div class="footer-col">
+                <h4>Policies</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Refund Policy</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Le-Bambini. All rights reserved. RIMAN is a registered trademark of INCELLDERM.</p>
+        </div>
+    </footer>
 
     <!-- Floating Cart & Checkout Modal -->
     <div id="cart-summary" class="cart-summary">
@@ -84,12 +404,12 @@
         <div class="modal-content">
             <span class="close-modal">&times;</span>
             <h2>Complete Your Order</h2>
-            
+
             <div class="order-total-highlight">
                 <p>Transfer Amount</p>
                 <h3 id="modal-total">$0.00</h3>
             </div>
-            
+
             <div class="payment-instructions">
                 <h4>Step 1: PayNow</h4>
                 <p>Scan the QR code below or PayNow to <strong>9424 8492 (Le-Bambini)</strong></p>
@@ -105,8 +425,8 @@
             <div class="form-instructions">
                 <h4>Step 2: Submit Order Form</h4>
                 <p>Have your screenshot ready? Click below to submit your delivery details and upload your payment proof to complete the order.</p>
-                
-                <a href="https://docs.google.com/forms/" target="_blank" id="google-form-btn" class="primary-btn form-submit">
+
+                <a href="https://forms.gle/YUM5S5cd6CSrTLUE8" target="_blank" id="google-form-btn" class="primary-btn form-submit">
                     Go to Order Form
                 </a>
                 <p class="small-instruction">We will process your order within 24 hours.</p>
